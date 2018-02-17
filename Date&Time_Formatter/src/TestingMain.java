@@ -17,5 +17,6 @@ public class TestingMain
     {
         timeAndDate = new FormattedDateAndTime();
         System.out.println(timeAndDate.getFormattedDate());
+        System.out.printf("Month:   %s%nDay:    %s%nDate:   %d%n", timeAndDate.getMonthStringShort(), timeAndDate.getDayStringShort(), timeAndDate.getDateInt());
     }
 }
