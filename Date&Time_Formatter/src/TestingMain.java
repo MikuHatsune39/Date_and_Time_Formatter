@@ -16,6 +16,6 @@ public class TestingMain
     private void run()
     {
         timeAndDate = new FormattedDateAndTime();
-        System.out.println(timeAndDate.getFomattedDate());
+        System.out.println(timeAndDate.getFormattedDate());
     }
 }
