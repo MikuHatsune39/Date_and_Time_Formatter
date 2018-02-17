@@ -64,7 +64,7 @@ public class FormattedDateAndTime
         return formattedName;
     }
 
-    public String getFomattedDate()
+    public String getFormattedDate()
     {
         String day = nameStyleDate("" + getDate().getDayOfWeek());
         int date = getDate().getDayOfMonth();
