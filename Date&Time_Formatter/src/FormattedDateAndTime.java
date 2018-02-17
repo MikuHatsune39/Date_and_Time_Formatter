@@ -64,11 +64,33 @@ public class FormattedDateAndTime
         return formattedName;
     }
 
+    public String getMonthString()
+    {
+        return "" + getDate().getMonth();
+    }
+
+    public String getMonthStringShort()
+    {
+        return nameStyleDate(getMonthString());
+    }
+
+    public String getDayString()
+    {
+        return "" + getDate().getDayOfWeek();
+    }
+
+    public String getDayStringShort()
+    {
+        return nameStyleDate(getDayString());
+    }
+
+    public int getDateInt()
+    {
+        return getDate().getDayOfMonth();
+    }
+
     public String getFormattedDate()
     {
-        String day = nameStyleDate("" + getDate().getDayOfWeek());
-        int date = getDate().getDayOfMonth();
-        String month = nameStyleDate("" + getDate().getMonth()); 
-        return day + " " + month + " " + date + " " + localTimeToString() + " " + shortTimeZoneName() + " " + getYear();
+        return getDayStringShort() + " " + getMonthStringShort() + " " + getDateInt() + " " + localTimeToString() + " " + shortTimeZoneName() + " " + getYear();
     }
 }
